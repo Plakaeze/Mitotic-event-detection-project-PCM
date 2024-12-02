@@ -1,6 +1,6 @@
 # Version 1.0.0
 ## Introduction
-Welcome to the mitotic event detection project for the lens-free imaging image dataset. To request the dataset, please send an email to manorost.panason@kuleuven.be because the dataset is not yet publicly available. This project contains 2 main code files for the features extraction stored in the "Core" folder. Code for the extracted features inspection and classification test is also included in that folder. The dataset can be downloaded from the link https://osf.io/ysaq2/ by the step mentioned in the download instruction https://osf.io/vuj9w 
+Welcome to the mitotic event detection project for the lens-free imaging image dataset. This project contains 2 main code files for the features extraction stored in the "Core" folder. Code for the extracted features inspection and classification test is also included in that folder. The dataset can be downloaded from the link https://osf.io/ysaq2/ by the step mentioned in the download instruction https://osf.io/vuj9w 
 
 ## CORE function
 The code for POC is core.py and the code for features extraction is core_rerun.py which contains subprocesses:
@@ -11,15 +11,38 @@ The code for POC is core.py and the code for features extraction is core_rerun.p
 - Features extraction from mother cell and daughter cell in telophase frame
 - Features extraction from cell moving.
 
-## Unit module running for features extraction process observation
-This section describe the unit runing procedure for this project. Each unit can provide the results of each process mentioned in the publication which include image preprocessing and segmentation, event tracking, and features extraction. The reference of the results are divided into 2 sets. First set we apply a value 2800 for threshold of AOI segmentation and another set we apply a value 2500 to the AOI segmentation which cause longer events path. The unit code function in the "Code" folder are explained below.
-- segmentation.py is the script for the AOI segmentation process which extract both region properties and label images.
-- mitosis_path_generation.py is the script for the event tracking process, this script generate the list of the event path for each sequence.
-- inner_AOI_segmentation_new.py is the script to observe the cells segmentation within AOI foe the telophase frame.
+## Unit Module for Feature Extraction Process Observation
 
-## Label and ground truth video
-The label folder is created to aligned on the video for ground truth file uploaded in this project. The folder of the ground truth video contains sub folder Seq1 to Seq4 similar to the label folder. These video are generated from the event tracking path that provided by the mitosis_path_generation unit. The label.csv in each sequence contain the label, class, and reference file information
+This document provides an overview of the procedures for running unit modules in this project. Each module generates results corresponding to the processes outlined in the associated publication, including image preprocessing, segmentation, event tracking, and feature extraction.
 
-## Event path observation
-Since the event tracking take long time to finish, the event path are stored in the folder "Full mito path" and "Full mito path 2500th". The list of path can be loaded and observe using the script path_observation.py. The loaded list contain the numpy array in the format [Start Frame|order of the cell region refer to the region properties of each frame|End Frame]
+The results are categorized into two datasets:
+1. A threshold value of 2800 is applied for AOI segmentation.
+2. A threshold value of 2500 is applied for AOI segmentation, resulting in longer event paths.
 
+Details about the functions in the **Code** folder are as follows:
+- **`segmentation.py`**: Executes the AOI segmentation process, extracting region properties and labeled images.
+- **`mitosis_path_generation.py`**: Handles event tracking and generates lists of event paths for each sequence.
+- **`inner_AOI_segmentation_new.py`**: Observes cell segmentation within AOIs for telophase frames.
+
+## Labels and Ground Truth Videos
+
+The **Label** folder contains aligned labels for the ground truth videos provided in this project. Subfolders **Seq1** to **Seq4** are included in both the **Label** and ground truth video directories. These videos are generated based on event tracking paths from the **`mitosis_path_generation.py`** script. Each sequence contains a `label.csv` file with the following columns:
+- `Label`: The unique identifier for each tracked region.
+- `Class`: The classification of the tracked region.
+- `Reference File`: The associated file for the tracked region.
+
+## Event Path Observation
+
+Event tracking may require significant computational time to complete. Precomputed event paths are stored in the folders:
+- **Full mito path**
+- **Full mito path 2500th**
+
+You can observe these paths using the **`path_observation.py`** script. The loaded paths are stored as NumPy arrays in the format:  
+`[Start Frame | Order of the Cell Region (referencing region properties for each frame) | End Frame]`
+
+## How to Download Data from the PCM Dataset
+
+1. Visit the [PCM dataset](https://osf.io/ysaq2/).
+2. Select the file you wish to download. For example, files marked within the red square in the provided figure.
+3. Once selected, the interface will display additional details. Click the pop-up button highlighted in red in the figure.
+4. To download multiple files or entire folders, use the button within the red square in the panel.
