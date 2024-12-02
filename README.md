@@ -10,3 +10,6 @@ The code for POC is core.py and the code for features extraction is core_rerun.p
 - Features extraction from the area of interest
 - Features extraction from mother cell and daughter cell in telophase frame
 - Features extraction from cell moving.
+
+## Unit module running for features extraction process observation
+This section describe the unit runing procedure for this project. Each unit can provide the results of each process mentioned in the publication which include image preprocessing and segmentation, event tracking, and features extraction.
