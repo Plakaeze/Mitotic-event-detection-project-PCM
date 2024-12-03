@@ -40,6 +40,19 @@ Event tracking may require significant computational time to complete. Precomput
 You can observe these paths using the **`path_observation.py`** script. The loaded paths are stored as NumPy arrays in the format:  
 `[Start Frame | Order of the Cell Region (referencing region properties for each frame) | End Frame]`
 
+## Label Images
+
+The labeled images are stored in the following directories based on the threshold values used during image segmentation:
+
+- **`Label pic`**: Contains labeled images with a 2800 threshold.  
+- **`Label pic 2500th`**: Contains labeled images with a 2500 threshold.
+
+These labeled images are utilized for extracting region properties, which serve as input for the event tracking process. The extracted region properties are saved in the respective directories:
+
+- **`Region properties`**: Corresponding to the `Label pic` folder (2800 threshold).  
+- **`Region properties 2500th`**: Corresponding to the `Label pic 2500th` folder (2500 threshold).
+
+
 ## How to Download Data from the PCM Dataset
 
 1. Visit the [PCM dataset](https://osf.io/ysaq2/).
