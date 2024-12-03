@@ -43,6 +43,6 @@ You can observe these paths using the **`path_observation.py`** script. The load
 ## How to Download Data from the PCM Dataset
 
 1. Visit the [PCM dataset](https://osf.io/ysaq2/).
-2. Select the file you wish to download. For example, files marked within the red square in the provided figure.
-3. Once selected, the interface will display additional details. Click the pop-up button highlighted in red in the figure.
-4. To download multiple files or entire folders, use the button within the red square in the panel.
+2. Select the file you wish to download. For example, files marked within the red square in the provided figure. ![step 2](https://github.com/Plakaeze/Mitotic-event-detection-project-PCM/blob/main/How%20to%20download%20PCM/step_1.png?raw=true)
+3. Once selected, the interface will display additional details. Click the pop-up button highlighted in red in the figure. ![step 3](https://github.com/Plakaeze/Mitotic-event-detection-project-PCM/blob/main/How%20to%20download%20PCM/step_2.png?raw=true)
+4. To download multiple files or entire folders, use the button within the red square in the panel. ![step 4](https://github.com/Plakaeze/Mitotic-event-detection-project-PCM/blob/main/How%20to%20download%20PCM/step_3.png?raw=true)
