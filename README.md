@@ -52,6 +52,34 @@ These labeled images are utilized for extracting region properties, which serve 
 - **`Region properties`**: Corresponding to the `Label pic` folder (2800 threshold).  
 - **`Region properties 2500th`**: Corresponding to the `Label pic 2500th` folder (2500 threshold).
 
+## Annotation Protocol  
+
+This document provides an overview of the process for annotating mitotic events, including the generation of videos from tracked candidates. The labels provided in the CSV file are not directly linked to the cell images but are associated with tracked event candidates processed through the data pipeline.  
+
+### Steps for Event Tracking and Video Generation  
+To annotate and generate videos for mitotic events, the following processes are executed:  
+
+1. **AOI Segmentation**  
+   - Segmentation of the Area of Interest (AOI) to isolate relevant regions.  
+
+2. **Region Properties Extraction**  
+   - Extraction of key properties from segmented AOIs for further analysis.  
+
+3. **Event Tracking**  
+   - Tracked using Euclidean distance and overlapping criteria to associate events over time.  
+
+4. **Path Similarity Filtering**  
+   - Filtering of candidate paths to ensure accurate and reliable event tracking.  
+
+5. **Video Generation**  
+   - Creation of videos from the tracked event candidates for visualization and validation.  
+
+### Ground Truth Video Storage  
+The videos generated as ground truth are stored in the following directories:  
+- **`Video for ground truth`**: Videos corresponding to a threshold segmentation of 2800.  
+- **`Video for ground truth 2500th`**: Videos corresponding to a threshold segmentation of 2500.  
+
+These folders contain all the required resources for validating and analyzing mitotic event annotations.  
 
 ## How to Download Data from the PCM Dataset
 
