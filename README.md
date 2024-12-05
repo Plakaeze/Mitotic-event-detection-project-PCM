@@ -44,12 +44,12 @@ You can observe these paths using the **`path_observation.py`** script. The load
 
 The labeled images are stored in the following directories based on the threshold values used during image segmentation:
 
-- **`Label pic`**: Contains labeled images with a 2800 threshold.  
+- **`Label pic 2800th`**: Contains labeled images with a 2800 threshold.  
 - **`Label pic 2500th`**: Contains labeled images with a 2500 threshold.
 
 These labeled images are utilized for extracting region properties, which serve as input for the event tracking process. The extracted region properties are saved in the respective directories:
 
-- **`Region properties`**: Corresponding to the `Label pic` folder (2800 threshold).  
+- **`Region properties 2800th`**: Corresponding to the `Label pic 2800th` folder (2800 threshold).  
 - **`Region properties 2500th`**: Corresponding to the `Label pic 2500th` folder (2500 threshold).
 
 ## Annotation Protocol  
@@ -76,7 +76,7 @@ To annotate and generate videos for mitotic events, the following processes are 
 
 ### Ground Truth Video Storage  
 The videos generated as ground truth are stored in the following directories:  
-- **`Video for ground truth`**: Videos corresponding to a threshold segmentation of 2800.  
+- **`Video for ground truth 2800th`**: Videos corresponding to a threshold segmentation of 2800.  
 - **`Video for ground truth 2500th`**: Videos corresponding to a threshold segmentation of 2500.  
 
 These folders contain all the required resources for validating and analyzing mitotic event annotations.  
