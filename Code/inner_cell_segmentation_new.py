@@ -29,15 +29,15 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 for s in tqdm(range(1,5)):
     seq = 'Seq' + str(s)
-    path_area_props = 'C:\\Mitotic Event Detection\\Region properties\\' + seq +'\\'
-    path_lab = 'C:\\Mitotic Event Detection\\Label pic\\' + seq +'\\'
+    path_area_props = 'C:\\Mitotic Event Detection\\Region properties 2800th\\' + seq +'\\'
+    path_lab = 'C:\\Mitotic Event Detection\\Label pic 2800th\\' + seq +'\\'
     path_data = 'C:\\Mitotic Event Detection\\Standard dataset\\' + seq +'\\'
     # path_save_mitosis_results = 'C:\\Mitotic Event Detection\\New detected mitotic frame\\' + seq +'\\'
     # path_save_mitosis_results = 'C:\\Mitotic Event Detection\\New detected mitotic frame longer\\' + seq +'\\'
     path_save_mitosis_im = 'C:\Mitotic Event Detection\Correct results\\im\\' + seq +'\\'
     path_save_mitosis_marker = 'C:\Mitotic Event Detection\Correct results\\marker\\' + seq +'\\'
-    # path_path = 'C:\\Mitotic Event Detection\\Full mito path\\'+ seq + '\\full_mito_path'
-    path_path = 'C:\\Mitotic Event Detection\\Full mito path longer\\'+ seq + '\\full_mito_path'
+    path_path = 'C:\\Mitotic Event Detection\\Full mito path 2800th\\'+ seq + '\\full_mito_path'
+    # path_path = 'C:\\Mitotic Event Detection\\Full mito path longer\\'+ seq + '\\full_mito_path'
     
     
     en_data = os.listdir(path_data)

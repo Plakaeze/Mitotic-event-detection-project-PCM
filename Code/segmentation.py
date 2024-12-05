@@ -28,9 +28,9 @@ for s in range(1,5):
     # s = 1
     seq = 'Seq' + str(s)
     path_data = 'C:\\Mitotic Event Detection\\Standard dataset\\' + seq + '\\'
-    # path_props = 'C:\\Mitotic Event Detection\\Region properties\\' + seq +'\\'
+    # path_props = 'C:\\Mitotic Event Detection\\Region properties 2800th\\' + seq +'\\'
     # path_results = 'C:\\Mitotic Event Detection\\Segmentation results\\' + seq +'\\'
-    # path_label = 'C:\\Mitotic Event Detection\\Label pic\\' + seq +'\\'
+    # path_label = 'C:\\Mitotic Event Detection\\Label pic 2800th\\' + seq +'\\'
     
     path_props = 'C:\\Mitotic Event Detection\\2500_th\\Region properties\\' + seq +'\\'
     path_results = 'C:\\Mitotic Event Detection\\2500_th\\Segmentation results\\' + seq +'\\'

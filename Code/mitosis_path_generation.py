@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 for s in range(1,5):
     seq = 'Seq' + str(s)    
-    path_area_props = 'C:\\Mitotic Event Detection\\Region properties\\' + seq + '\\'
+    path_area_props = 'C:\\Mitotic Event Detection\\Region properties 2800th\\' + seq + '\\'
     path_data = 'C:\\Mitotic Event Detection\\Standard dataset\\' + seq +'\\'
     
     # path_area_props = 'C:\\Mitotic Event Detection\\2500_th\\Region properties\\' + seq + '\\'
@@ -119,8 +119,8 @@ for s in range(1,5):
             filtered_full_mito_path.append(temp_cons_path)
     
     # path_path = 'C:\\Mitotic Event Detection\\Full mito path\\'+ seq + '\\full_mito_path'
-    # path_path = 'C:\\Mitotic Event Detection\\2500_th\\Full mito path\\'+ seq + '\\full_mito_path'
-    path_path = 'C:\\Mitotic Event Detection\\Full mito path longer\\'+ seq + '\\full_mito_path'
+    path_path = 'C:\\Mitotic Event Detection\\2500_th\\Full mito path 2800th\\'+ seq + '\\full_mito_path'
+    # path_path = 'C:\\Mitotic Event Detection\\Full mito path longer\\'+ seq + '\\full_mito_path'
     
     with open(path_path, "wb") as fp:   # Pickling
         pickle.dump(filtered_full_mito_path, fp)
@@ -149,10 +149,10 @@ for s in range(1,5):
         cons_mito_path.append(processed_path)
         cons_mito_eu.append(processed_eu)
     
-    path_lab = 'C:\\Mitotic Event Detection\\Label pic\\' + seq +'\\'
+    path_lab = 'C:\\Mitotic Event Detection\\Label pic 2800th\\' + seq +'\\'
     path_temp_fig = 'C:\\Mitotic Event Detection\\Temp_pic\\'
-    # path_save_vid = 'C:\\Mitotic Event Detection\\Video for ground truth\\' + seq + '\\'
-    path_save_vid = 'C:\\Mitotic Event Detection\\Video for ground truth longer\\' + seq + '\\'
+    path_save_vid = 'C:\\Mitotic Event Detection\\Video for ground truth 2800th\\' + seq + '\\'
+    # path_save_vid = 'C:\\Mitotic Event Detection\\Video for ground truth longer\\' + seq + '\\'
     
     # path_lab = 'C:\\Mitotic Event Detection\\2500_th\\Label pic\\' + seq +'\\'
     # path_temp_fig = 'C:\\Mitotic Event Detection\\2500_th\\Temp_pic\\'

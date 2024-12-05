@@ -26,11 +26,11 @@ import pickle
 
 # seq = 'Seq' + str(s)
 seq = 'Seq1'
-path_area_props = 'C:\\Mitotic Event Detection\\Region properties\\' + seq +'\\'
-path_lab = 'C:\\Mitotic Event Detection\\Label pic\\' + seq +'\\'
+path_area_props = 'C:\\Mitotic Event Detection\\Region properties 2800th\\' + seq +'\\'
+path_lab = 'C:\\Mitotic Event Detection\\Label pic 2800th\\' + seq +'\\'
 path_data = 'C:\\Mitotic Event Detection\\Standard dataset\\' + seq +'\\'
 path_save_mitosis_results = 'C:\\Mitotic Event Detection\\New detected mitotic frame\\' + seq +'\\'
-path_path = 'C:\\Mitotic Event Detection\\Full mito path\\'+ seq + '\\full_mito_path'
+path_path = 'C:\\Mitotic Event Detection\\Full mito path\\'+ seq + '\\full_mito_path 2800th'
 
 
 en_data = os.listdir(path_data)

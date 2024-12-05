@@ -24,8 +24,8 @@ from skimage.filters import try_all_threshold
 from skimage.filters import threshold_otsu
 import pickle
 
-path_area_props = 'C:\\Mitotic Event Detection\\Region properties\\'
-path_lab = 'C:\\Mitotic Event Detection\\Label pic\\'
+path_area_props = 'C:\\Mitotic Event Detection\\Region properties 2800th\\'
+path_lab = 'C:\\Mitotic Event Detection\\Label pic 2800th\\'
 path_data = 'C:\\Mitotic Event Detection\\Standard dataset\\osfstorage-archive\\'
 path_save_mitosis_results = 'C:\\Mitotic Event Detection\\Detected mitosis frame\\'
 path_save_mitosis_area = 'C:\\Mitotic Event Detection\\Mitosis area\\'
